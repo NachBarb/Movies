@@ -1,10 +1,12 @@
-import React from 'react'
-import { Row, Col, Botton } from 'antd'
+import React, { useState } from 'react'
+import { Row, Col, Botton, Button } from 'antd'
 import { useParams } from 'react-router-dom'
 import moment from "moment"
 import useFetch from '../../services/useFetch'
 import { URL_API, API } from '../../utils/constant'
 import Loading from '../../components/Loading/Loading'
+import ModalVideo from '../../components/ModalVideo/ModalVideo'
+import { PlayCircleFilled } from '@ant-design/icons'
 import "./Movie.scss"
 
 const Movie = () => {
@@ -60,6 +62,30 @@ const PosterMovie = (props) => {
 
 const MovieInfo = (props) => {
   const { movieInfo: { id, title, release_date, overview, genres } } = props;
+  const [isVisibleModal, setIsVisibleModal] = useState(false);
+  const videoMovie = useFetch(`${URL_API}/movie/${id}/videos?api_key=${API}&language=es-ES`)
+  const openModal = () => setIsVisibleModal(true);
+  const closeModal = () => setIsVisibleModal(false);
+
+  const renderVideo = () => {
+    if (videoMovie.result) {
+      if (videoMovie.result.results.length > 0) {
+        return <>
+          <Button onClick={openModal}>
+            <PlayCircleFilled />
+            Ver Trailer
+          </Button>
+          <ModalVideo
+            videoKey={videoMovie.result.results[0].key}
+            videoPlatform={videoMovie.result.results[0].site}
+            isOpen={isVisibleModal}
+            close={closeModal}
+          />
+        </>
+      }
+    }
+  }
+
   return (
     <>
       <div className='movie_info-header'>
@@ -67,9 +93,7 @@ const MovieInfo = (props) => {
           {title}
           <span>{moment(release_date, "YYYY-MM-DD").format("YYYY")}</span>
         </h1>
-        <button>
-          Ver Trailer
-        </button>
+        {renderVideo()}
       </div>
       <div className='movie_info-content'>
         <h3>General</h3>

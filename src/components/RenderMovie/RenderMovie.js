@@ -1,6 +1,7 @@
 import React from 'react'
 import { List, Avatar, Button } from "antd";
 import { Link } from 'react-router-dom';
+import { SendOutlined } from '@ant-design/icons';
 
 const RenderMovie = (props) => {
 
@@ -14,7 +15,9 @@ const RenderMovie = (props) => {
                 title={<Link to={`/movie/${id}`}>{title}</Link>}
             />
             <Link to={`/movie/${id}`}>
-                <Button type='primary' shape='cirlce' icon=">" />
+                <Button type='primary' shape='cirlce' >
+                    <SendOutlined />
+                </Button>
             </Link>
         </List.Item>
     )

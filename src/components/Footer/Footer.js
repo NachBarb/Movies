@@ -8,7 +8,7 @@ const Footer = () => {
 
     return (
         <Footer className="footer">
-            <p>Nacho</p>
+            <p>Created by Ignacio Barbisan</p>
         </Footer>
     )
 }
