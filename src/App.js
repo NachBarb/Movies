@@ -16,13 +16,13 @@ function App() {
   return (
     <Layout>
       <Router>
-        <Header>
+        <Header style={{ zIndex: 1 }}>
           <MenuTop />
         </Header>
         <Content>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/movie" element={<Movie />} />
+            <Route path="/movie/:id" element={<Movie />} />
             <Route path="/newMovies" element={<NewMovies />} />
             <Route path="/popular" element={<Popular />} />
             <Route path="/search" element={<Search />} />
