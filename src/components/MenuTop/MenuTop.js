@@ -9,7 +9,7 @@ const MenuTop = () => {
     <div className="menu-top_logo">
       <Logo />
     </div>
-    <Menu theme="dark" mode="horizontal" defaultSelectedKeys={["1"]} style={{ lineHeight: "64px" }}>
+    <Menu className="menu-top_listMenu" theme="dark" mode="horizontal" defaultSelectedKeys={["1"]} style={{ lineHeight: "64px" }}>
       <Menu.Item key="1">
         <Link to="/">Home</Link>
       </Menu.Item>

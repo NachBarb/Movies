@@ -1,0 +1,25 @@
+.search {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1;
+    margin: 50px 0;
+
+    h1 {
+        text-align: center;
+        font-size: 50px;
+    }
+
+    input {
+        text-align: center;
+        font-size: 35px;
+        height: 60px;
+        border-radius: 50px;
+    }
+
+    svg {
+        margin-bottom: 20px;
+        width: 50px;
+        height: 50px;
+    }
+}
