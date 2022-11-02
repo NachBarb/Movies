@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'antd/dist/antd.css'; //Se debe agregar para que se vean correctamente los estilos.
+import "rc-pagination/assets/index.css"
 import './index.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

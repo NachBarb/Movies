@@ -4,6 +4,7 @@ import { URL_API, API } from '../utils/constant'
 import Footer from '../components/Footer/Footer'
 import Loading from '../components/Loading/Loading'
 import MovieCatalog from '../components/MovieCatalog/MovieCatalog'
+import PaginationMovies from '../components/PaginationMovies/PaginationMovies'
 
 
 const NewMovies = () => {
@@ -20,13 +21,34 @@ const NewMovies = () => {
 
     }, [page]);
 
+    const onChangePage = page => {
+        setPage(page);
+    }
+
 
     return (
         <Row>
             <Col span="24" style={{ textAlign: "center", marginTop: 25 }}>
                 <h1 style={{ fontSize: 35, fontWeight: "bold" }}>Ultimos lanzamientos</h1>
             </Col>
-            {movieList.results ? (<Col span="24"><Row><MovieCatalog movies={movieList} /></Row></Col>) : (<Col span="24"><Loading /></Col>)}
+            {movieList.results ?
+                (<>
+                    <Col span="24">
+                        <Row>
+                            <MovieCatalog movies={movieList} />
+                        </Row>
+                    </Col>
+                    <Col span="24">
+                        <PaginationMovies currentPage={movieList.page}
+                            totalItems={movieList.total_results}
+                            onChangePage={onChangePage}
+                        />
+                    </Col>
+                </>
+                ) :
+                (<Col span="24">
+                    <Loading />
+                </Col>)}
             <Col span="24">
                 <Footer />
             </Col>
