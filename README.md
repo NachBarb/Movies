@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+<!-- [![MIT License][license-shield]][license-url] -->
+<h1 align="center">Simulador de peliculas</h1>
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/NachBarb/Movies/blob/main/src/assets/images/logo.svg">
+    <img src="https://github.com/NachBarb/Movies/blob/main/src/assets/images/logo.svg" alt="Logo" width="80" height="80">
+  </a>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
-## Available Scripts
+  <p align="center">
+    Simulador de pagina de peliculas realizado con React
+    <br />
+    <br />
+    <a href="https://moviesbynacho.netlify.app/">Ver demo</a>
+    ·
+    <a href="https://github.com/NachBarb/Movies/issues">Reportar errores</a>
+    
+  </p>
+</div>
 
-In the project directory, you can run:
+<!-- ABOUT THE PROJECT -->
 
-### `npm start`
+## Acerca del proyecto
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![Product Name Screen Shot](<./src//assets/images/1.jpg>)
+![Product Name Screen Shot](<./src//assets/images/2.jpg>)
+![Product Name Screen Shot](<./src//assets/images/4.jpg>)
+![Product Name Screen Shot](<./src//assets/images/5.jpg>)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<p align="right">(<a href="#readme-top">volver arriba</a>)</p>
 
-### `npm test`
+### Hecho con
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+[![React][react.js]][react-url]
+![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)
+![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+![Moment](https://img.shields.io/badge/Moment-0078d7.svg?style=for-the-badge&logo=moment-js&logoColor=green)
 
-### `npm run build`
+<p align="right">(<a href="#readme-top">volver arriba</a>)</p>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<!-- GETTING STARTED -->
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Empezando 🚀
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Este proyecto fue inicializado con [Create React App](https://github.com/facebook/create-react-app).
 
-### `npm run eject`
+## Instalacion
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Clona el repositorio
+   ```sh
+   git clone https://github.com/NachBarb/Movies.git
+   ```
+2. Instala las dependencias con npm
+   ```sh
+   npm install
+   ```
+3. Corre la aplicacion en modo dev
+   ```js
+   npm start
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<p align="right">(<a href="#readme-top">volver arriba</a>)</p>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://uy.linkedin.com/in/ignacio-barbisan-9267a3b0
+[react.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
+[react-url]: https://reactjs.org/
