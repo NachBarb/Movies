@@ -3,12 +3,12 @@ import { Layout } from "antd";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import MenuTop from "./components/MenuTop/MenuTop";
 //pages
-import Error404 from "./pages/Error404";
+import Error404 from "./pages/Error404/Error404";
 import Home from "./pages/Home";
 import Movie from "./pages/Movie/Movie";
 import NewMovies from "./pages/NewMovies";
 import Popular from "./pages/Popular";
-import Search from "./pages/Search";
+import Search from "./pages/Search/Search";
 
 function App() {
   const { Header, Content } = Layout;
